@@ -7,7 +7,7 @@ import utils
 ## -------------------------------------------------------------------
 
 if "data" not in st.session_state:
-    files = glob(r"data\*.parquet")
+    files = glob(r"data/*.parquet")
     df = pd.read_parquet(files)
     df["ingredients"] = (
         df["ingredients"]
