@@ -27,9 +27,12 @@ st.header("Food Recipe Recommeder")
 st.text("Search similary recipes based on their ingredients")
 
 recipe = st.selectbox(
-    label="Search the recipe:", options=st.session_state["data"]["name"]
+    label="Search the recipe:", options=st.session_state["data"]["name"], index=105226
 )
-num_recipes = st.slider(label="Number of similar recipes", min_value=3, max_value=10)
+num_recipes = st.number_input(
+    label="Number of similar recipes", min_value=3, max_value=10, step=1
+)
+# num_recipes = st.slider(label="Number of similar recipes", min_value=3, max_value=10)
 
 ## Find similarity
 ## -------------------------------------------------------------------
@@ -46,7 +49,6 @@ def assign_values():
 
 search = st.button(label="Search", on_click=assign_values)
 
-
 ## Display the results
 ## -------------------------------------------------------------------
 
@@ -55,7 +57,9 @@ if search:
     for row_index in range(st.session_state["result"].shape[0]):
         dfx = st.session_state["result"].iloc[row_index]
 
-        with st.expander(dfx["name"]):
+        with st.expander(
+            f"{dfx['name'].capitalize()} | Similarity :blue[{dfx['similarity']}] %"
+        ):
             tab_1, tab_2, tab_3 = st.tabs(["Summary", "Ingredients", "Recipe"])
 
             with tab_1:
@@ -70,7 +74,7 @@ if search:
                     st.metric(label="Number of Ingredients", value=dfx["n_ingredients"])
 
                 with col4:
-                    st.metric(label="Minutes", value=dfx["minutes"])
+                    st.metric(label="Cooking Time", value=f"{dfx['minutes']} Mins")
 
             with tab_2:
                 st.text(f"Number of Ingredients: {dfx['n_ingredients']}")
@@ -79,8 +83,8 @@ if search:
 
             with tab_3:
                 st.text(f"Recipe")
-                for step in dfx["steps"]:
-                    st.markdown(f"- {step}")
+                for i, step in enumerate(dfx["steps"]):
+                    st.markdown(f"{i}. {step}")
 
 
 # if st.session_state["result"] is not None:
