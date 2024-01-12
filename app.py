@@ -3,6 +3,16 @@ from glob import glob
 import pandas as pd
 import utils
 
+## STREAMLIT CONFIGURATION
+## --------------------------------------------------------------------------------##
+st.set_page_config(
+    page_title="Food Recipe Recommeder",
+    page_icon="style\qiddiya-city-logo.ico",
+)
+
+with open("style.css") as f:
+    st.markdown(f"<style>{f.read()}</style>", unsafe_allow_html=True)
+
 ## Session state variables
 ## -------------------------------------------------------------------
 
@@ -23,7 +33,7 @@ if "data" not in st.session_state:
 ## App Layout
 ## -------------------------------------------------------------------
 
-st.header("Food Recipe Recommeder")
+st.header("Food Recipe Recommender")
 st.text("Search similary recipes based on their ingredients")
 
 recipe = st.selectbox(
@@ -58,7 +68,8 @@ if search:
         dfx = st.session_state["result"].iloc[row_index]
 
         with st.expander(
-            f"{i+1}. {dfx['name'].capitalize()} | Similarity :blue[{dfx['similarity']}] %"
+            f"{i+1}. "
+            + f"{dfx['name'].capitalize()} | Similarity :blue[{dfx['similarity']}] %"
         ):
             tab_1, tab_2, tab_3 = st.tabs(["Summary", "Ingredients", "Recipe"])
 
