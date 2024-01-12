@@ -30,9 +30,12 @@ More models on this [link](https://www.sbert.net/docs/pretrained_models.html#mod
 
 ![demo1](https://github.com/kavyajeetbora/recipe_recommender/assets/38955297/ca259da4-436d-434d-9754-90cc277e1280)
 
-
-### Run the app
+### App is deployed on streamlit
 
 The app is deployed on streamlit server
 
 [Run the app](https://kavyajeetbora-recipe-recommender-app-bo2dv0.streamlit.app/)
+
+### TODO
+
+- Show the nutrition values

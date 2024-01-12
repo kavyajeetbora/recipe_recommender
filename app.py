@@ -76,6 +76,9 @@ if search:
                 with col4:
                     st.metric(label="Cooking Time", value=f"{dfx['minutes']} Mins")
 
+                fig = utils.plot_nutrition(dfx)
+                st.plotly_chart(fig)
+
             with tab_2:
                 st.text(f"Number of Ingredients: {dfx['n_ingredients']}")
                 for step in dfx["ingredients"]:

@@ -1,4 +1,5 @@
 import numpy as np
+import plotly.graph_objects as go
 
 
 def cosine_similarity(vec1, vec2):
@@ -30,3 +31,48 @@ def find_similar_recipe(recipe, df, num_recipes):
 
     else:
         return None
+
+
+def setColor(pdv):
+    if pdv < 5:
+        return "red"
+
+    elif pdv >= 5 and pdv < 20:
+        return "red"
+
+    elif pdv > 20:
+        return "red"
+
+
+def plot_nutrition(data):
+    x = data.index[8:13]
+    y = data.values[8:13]
+
+    fig = go.Figure(
+        go.Bar(
+            name="",
+            x=x,
+            y=y,
+            width=0.2,
+            uirevision=True,
+            # marker=dict(color=list(map(setColor, y))),
+            hovertemplate="<br><b>%{x}</b>: %{y:.2f}",
+        ),
+    )
+    fig.update_layout(
+        template="plotly_dark",
+        margin=dict(l=20, r=20, t=20, b=20),
+        width=500,
+        height=200,
+    )
+    fig.update_xaxes(
+        showgrid=False,
+    )
+    # fig.update_yaxes(
+    #     showgrid=False,
+    #     showticklabels=False
+    # )
+    fig.layout.xaxis.fixedrange = True
+    fig.layout.yaxis.fixedrange = True
+
+    return fig
