@@ -54,11 +54,11 @@ search = st.button(label="Search", on_click=assign_values)
 
 x = st.session_state["data"].iloc[0]
 if search:
-    for row_index in range(st.session_state["result"].shape[0]):
+    for i, row_index in enumerate(range(st.session_state["result"].shape[0])):
         dfx = st.session_state["result"].iloc[row_index]
 
         with st.expander(
-            f"{dfx['name'].capitalize()} | Similarity :blue[{dfx['similarity']}] %"
+            f"{i+1}. {dfx['name'].capitalize()} | Similarity :blue[{dfx['similarity']}] %"
         ):
             tab_1, tab_2, tab_3 = st.tabs(["Summary", "Ingredients", "Recipe"])
 
@@ -81,12 +81,12 @@ if search:
 
             with tab_2:
                 st.text(f"Number of Ingredients: {dfx['n_ingredients']}")
-                for step in dfx["ingredients"]:
-                    st.markdown(f"- {step}")
+                for i, step in enumerate(dfx["ingredients"]):
+                    st.markdown(f"{i+1}. {step}")
 
             with tab_3:
                 st.text(f"Recipe")
                 for i, step in enumerate(dfx["steps"]):
-                    st.markdown(f"{i}. {step}")
+                    st.markdown(f"{i+1}. {step}")
 
     #  del st.session_state["data"]
