@@ -28,7 +28,8 @@ More models on this [link](https://www.sbert.net/docs/pretrained_models.html#mod
 
 ### Demo
 
-![demo1](https://github.com/kavyajeetbora/recipe_recommender/assets/38955297/ca259da4-436d-434d-9754-90cc277e1280)
+![demo1](https://github.com/kavyajeetbora/recipe_recommender/assets/38955297/19a0da9c-2b88-4c84-9b91-4321f2397ed9)
+
 
 ### App is deployed on streamlit
 
