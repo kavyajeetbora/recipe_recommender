@@ -27,7 +27,7 @@ st.header("Food Recipe Recommeder")
 st.text("Search similary recipes based on their ingredients")
 
 recipe = st.selectbox(
-    label="Search the recipe:", options=st.session_state["data"]["name"], index=105226
+    label="Search the recipe:", options=st.session_state["data"]["name"], index=100
 )
 num_recipes = st.number_input(
     label="Number of similar recipes", min_value=3, max_value=10, step=1
@@ -89,6 +89,4 @@ if search:
                 for i, step in enumerate(dfx["steps"]):
                     st.markdown(f"{i}. {step}")
 
-
-# if st.session_state["result"] is not None:
-#     st.dataframe(st.session_state["result"])
+    #  del st.session_state["data"]
