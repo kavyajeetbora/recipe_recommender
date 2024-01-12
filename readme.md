@@ -4,6 +4,10 @@
 
 An item based recommder system for food recipes based on their ingredients
 
+### Demo
+
+![demo1](https://github.com/kavyajeetbora/recipe_recommender/assets/38955297/19a0da9c-2b88-4c84-9b91-4321f2397ed9)
+
 ### What data it is based on ?
 
 It is based on the public data available on kaggle: [Raw Recipes](https://www.kaggle.com/code/aayushmishra1512/food-recommender/input?select=RAW_recipes.csv)
@@ -25,11 +29,6 @@ More models on this [link](https://www.sbert.net/docs/pretrained_models.html#mod
 2. After the ingredients are embedded (in vector form), the cosine similarity is calculated between the user search query and rest of the recipes. Basically finding the angle between two vectors, lesser the angle more similar they are and vice versa
 
 ![](https://storage.googleapis.com/lds-media/images/cosine-similarity-vectors.original.jpg)
-
-### Demo
-
-![demo1](https://github.com/kavyajeetbora/recipe_recommender/assets/38955297/19a0da9c-2b88-4c84-9b91-4321f2397ed9)
-
 
 ### App is deployed on streamlit
 
