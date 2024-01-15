@@ -29,7 +29,7 @@ if "data" not in st.session_state:
 ## -------------------------------------------------------------------
 
 st.header("Food Recipe Recommender")
-st.text("Search similary recipes based on their ingredients")
+st.text("Search similar recipes based on their ingredients")
 
 recipe = st.selectbox(
     label="Search the recipe:", options=st.session_state["data"]["name"], index=100
