@@ -36,6 +36,9 @@ The app is deployed on streamlit server
 
 [Run the app](https://kavyajeetbora-recipe-recommender-app-bo2dv0.streamlit.app/)
 
+### Medium article
+[Medium article: Step by step guide on how to develop this application](https://medium.com/@kavyajeetbora/create-a-food-recipe-recommender-application-using-sentence-transformer-model-and-streamlit-aea2141a4599)
+
 ### TODO
 
-- Show the nutrition values
+- ~Show the nutrition values~
