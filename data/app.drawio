@@ -1,0 +1,30 @@
+<mxfile host="65bd71144e">
+    <diagram id="NWLOnnWZOr_RVonjcgbq" name="Page-1">
+        <mxGraphModel dx="689" dy="308" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" background="#ffffff" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="2" value="Food Recipe Recommender" style="swimlane;startSize=20;horizontal=1;containerType=tree;strokeColor=#000000;fillColor=#FFFFFF;" vertex="1" parent="1">
+                    <mxGeometry x="110" y="120" width="400" height="350" as="geometry"/>
+                </mxCell>
+                <mxCell id="12" value="Number of recipes&amp;nbsp; +/-" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="2">
+                    <mxGeometry x="126" y="100" width="140" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="15" value="Search" style="rounded=1;fillColor=#0057D8;align=center;strokeColor=none;html=1;fontColor=#ffffff;fontSize=12;sketch=0;" vertex="1" parent="2">
+                    <mxGeometry x="156" y="130" width="80" height="33" as="geometry"/>
+                </mxCell>
+                <mxCell id="18" value="Recipes:&lt;br&gt;1. Recipe 1 | Similarity : 90%&lt;br&gt;2. Recipe 2 | Similarity : 80%&lt;br&gt;3. Recipe 3 | Similarity : 70%" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="2">
+                    <mxGeometry x="100" y="210" width="192" height="103" as="geometry"/>
+                </mxCell>
+                <mxCell id="10" value="Search Recipe" style="shape=mxgraph.ios7.icons.looking_glass;strokeColor=#e0e0e0;fillColor=none;fontColor=#e0e0e0;labelPosition=right;verticalLabelPosition=middle;align=left;verticalAlign=middle;fontSize=6;fontStyle=0;spacingTop=2;sketch=0;" vertex="1" parent="2">
+                    <mxGeometry x="0.5" y="0.5" width="9.5" height="6" relative="1" as="geometry">
+                        <mxPoint x="-70" y="-98" as="offset"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="19" value="Search Recipes" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="2">
+                    <mxGeometry x="126" y="70" width="140" height="20" as="geometry"/>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>
