@@ -1,0 +1,22 @@
+#root > div:nth-child(1) > div.withScreencast > div > div > div > section {
+    text-align: center;
+    padding: 0;
+}
+
+#root > div:nth-child(1) > div.withScreencast > div > div > div {
+    margin-top: 1rem;
+}
+
+#root > div:nth-child(1) > div.withScreencast > div > div > div > section > div.block-container.st-emotion-cache-1y4p8pa.ea3mdgi2 > div > div > div > div:nth-child(2) > div > button {
+    visibility: hidden;
+}
+
+#root > div:nth-child(1) > div.withScreencast > div > div > div > section > div.block-container.st-emotion-cache-1y4p8pa.ea3mdgi2 > div > div > div > div:nth-child(2) > div > div {
+    display: flex;
+    flex-direction: column;
+    -webkit-box-align: stretch;
+    align-items: center;
+    width: auto;
+    -webkit-box-flex: 0;
+    flex-grow: 0;
+}

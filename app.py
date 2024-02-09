@@ -7,6 +7,8 @@ import utils
 ## --------------------------------------------------------------------------------##
 st.set_page_config(page_title="Food Recipe Recommeder")
 
+with open("style.css") as f:
+    st.markdown(f"<style>{f.read()}</style>", unsafe_allow_html=True)
 
 ## Session state variables
 ## -------------------------------------------------------------------
@@ -27,6 +29,8 @@ if "data" not in st.session_state:
 
 ## App Layout
 ## -------------------------------------------------------------------
+
+st.image("images\logo.png", width=100)
 
 st.header("Food Recipe Recommender")
 st.text("Search similar recipes based on their ingredients")
