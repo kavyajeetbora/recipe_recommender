@@ -30,7 +30,7 @@ if "data" not in st.session_state:
 ## App Layout
 ## -------------------------------------------------------------------
 
-st.image("images\logo.png", width=100)
+st.image(r"images/logo.png", width=100)
 
 st.header("Food Recipe Recommender")
 st.text("Search similar recipes based on their ingredients")
