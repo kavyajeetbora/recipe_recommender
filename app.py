@@ -6,7 +6,7 @@ import utils
 ## STREAMLIT CONFIGURATION
 ## --------------------------------------------------------------------------------##
 st.set_page_config(
-    page_title="Food Recipe Recommeder", page_icon="images\logo-color.ico"
+    page_title="Food Recipe Recommeder", page_icon=r"images/logo-color.ico"
 )
 
 with open("style.css") as f:
@@ -37,9 +37,12 @@ st.image(r"images/logo-no-background.png", width=400)
 recipe = st.selectbox(
     label="Search the recipe:", options=st.session_state["data"]["name"], index=100
 )
-num_recipes = st.number_input(
-    label="Number of similar recipes", min_value=3, max_value=10, step=1
-)
+
+col1, col2 = st.columns([1, 3])
+with col1:
+    num_recipes = st.number_input(
+        label="Number of similar recipes", min_value=3, max_value=10, step=1
+    )
 # num_recipes = st.slider(label="Number of similar recipes", min_value=3, max_value=10)
 
 ## Find similarity
