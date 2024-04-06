@@ -1,3 +1,5 @@
+<img src='https://github.com/kavyajeetbora/recipe_recommender/blob/22d2834d70d2fe6b40b77e6559221c6028edf12b/images/logo-no-background.png' height=200/>
+
 ## Food Recipe Recommender
 
 ### What is it ?
