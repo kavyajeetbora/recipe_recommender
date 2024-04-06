@@ -30,10 +30,7 @@ if "data" not in st.session_state:
 ## App Layout
 ## -------------------------------------------------------------------
 
-st.image(r"images/logo.png", width=100)
-
-st.header("Food Recipe Recommender")
-st.text("Search similar recipes based on their ingredients")
+st.image(r"images/logo-no-background.png", width=400)
 
 recipe = st.selectbox(
     label="Search the recipe:", options=st.session_state["data"]["name"], index=100
