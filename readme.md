@@ -4,7 +4,7 @@
 
 ### What is it ?
 
-An item based recommder system for food recipes based on their ingredients
+An item based recommender system for food recipes based on their ingredients
 
 ### Demo
 
